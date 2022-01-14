@@ -4,6 +4,7 @@
     padding-left: 100px;
     padding-right: 100px;
     padding-bottom: 14px;
+
     background-color: var(--nord-1);
     position:fixed;
     width: 102vw;
@@ -15,6 +16,7 @@
     color: var(--polar-2);
     font-weight: bolder;
     font-size: 18px;
+
     
 }
 
