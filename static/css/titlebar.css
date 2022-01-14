@@ -1,9 +1,9 @@
 .title_bar {
     z-index: 100;
     padding-top : 32px;
-    padding-left: 120px;
-    padding-right: 120px;
-    padding-bottom: 24px;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-bottom: 14px;
     background-color: var(--nord-1);
     position:fixed;
     width: 102vw;
@@ -14,7 +14,7 @@
     padding-left: 32px;
     color: var(--polar-2);
     font-weight: bolder;
-    font-size: 20px;
+    font-size: 18px;
     
 }
 
@@ -33,5 +33,5 @@
     color: var(--polar-2);
     font-weight: bolder;
     padding-left: 24px;
-    font-size: 20px;
+    font-size: 18px;
 }
