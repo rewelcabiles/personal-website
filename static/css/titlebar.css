@@ -1,0 +1,13 @@
+.title_bar {
+    padding : 15px;
+    background-color: var(--nord-1);
+}
+
+.title_bar p {
+    color: var(--polar-2);
+    margin-right: 10px;
+}
+
+.title_title {
+    color: var(--polar-1);
+}

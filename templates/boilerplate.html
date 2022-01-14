@@ -3,19 +3,27 @@
   <head>
     <title>Rewel Cabiles</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/titlebar.css') }}">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
-  <body >
-    <div class="col container-fluid">
-    {% with messages = get_flashed_messages() %}
-        {% if messages %}
-          <ul class="flashes alert alert-warning">
-            {% for message in messages %}
-                <li class="text-center">{{ message }}</li>
-            {% endfor %}
-          </ul>
-        {% endif %}
-    {% endwith %}
+  <body>
+    <div class="row">
+        <div class="container-fluid d-flex justify-content-between  px-5 title_bar">
+            <div>
+                <h4 class="title_title">Rewel Cabiles</h4>
+            </div>
+            <div></div>
+            <div class="d-flex">
+                <p>Home</p>
+                <p>Projects</p>
+                <p>Resume</p>
+                <p>Github</p>
+            </div>
+
+
+        </div>
+        
     </div>
 
     {% block content %}{% endblock %}
