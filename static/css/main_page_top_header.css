@@ -1,0 +1,124 @@
+.top_text{
+    color: var(--polar-1);
+    font-size: 24px;
+}
+
+.top_text b {
+    color: var(--frost-1);
+    font-size: 32px;
+}
+
+.top_main_text {
+    color: var(--polar-3);
+    font-size: 28px;
+}
+
+.top_header {
+    padding-top: 160px;
+    padding-bottom: 70px;
+    background-color: var(--nord-2);
+    box-shadow: 0 4px 40px RGBA(0, 0, 0, 0.3);
+}
+
+.top_header img{
+    border-radius: 30%;
+    margin-left: 340px;
+    object-fit: cover;
+    width:300px;
+    height:300px;
+    box-shadow: 0 6px 20px RGBA(0, 0, 0, 0.7);
+}
+.slidein {
+    left:2400px;
+    position: relative;
+    -webkit-animation-name: animation1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 0.2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards;
+    animation-name: slidein;
+    animation-duration: 2s;
+}
+
+@keyframes slidein {
+    100% {left:0px;}
+}
+
+.slidein_body {
+    left:2400px;
+    position: relative;
+    padding-right: 240px;
+    -webkit-animation-name: animation1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.4s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 0.8s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards;
+    animation-name: slidein_body;
+    animation-duration: 2s;
+}
+
+@keyframes slidein_body {
+    100% {left:0px;}
+}
+
+.transition {
+    background-color: var(--nord-4);
+    padding: 45PX;
+    padding-left: 320px;
+    padding-right: 320px;
+    padding-bottom: 5px !important; 
+}
+
+.transition h3{
+    color: var(--polar-1);
+    font-size: 40px;
+    text-align: center;
+}
+
+
+.transition hr {
+    background-color: var(--frost-1);
+    height: 1px;
+    
+    border-radius: 50px;
+}
+
+.projects_showcase {
+    left: 0px;
+    padding: 45px;
+    padding-left: 320px;
+    padding-right: 320px;
+    background-color: var(--nord-4);
+}
+
+.project_detail_titles > h2 {
+    color: var(--polar-3);
+}
+
+.project_detail_titles > a,
+.project_detail_titles > a:hover,
+.project_detail_titles > a:visited
+.project_detail_titles > a:active {
+    padding: 0px;
+    margin: 0px;
+    color: var(--polar-3);
+    text-decoration: none;
+    font-size: 22px;
+}
+
+.project_details hr {
+    background-color: var(--frost-1);
+    border-radius: 40px;
+    height: 2px;
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+
+.project_details p {
+    color: var(--polar-1);
+    text-align: justify;
+}
+
+.vidya{
+    object-fit: cover;
+    border-radius: 2%;
+    width: 100%;
+}

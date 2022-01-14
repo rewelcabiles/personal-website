@@ -6,4 +6,14 @@
     --polar-1:#d8dee9;
     --polar-2:#e5e9f0;
     --polar-3:#eceff4;
+    --frost-1:#8fbcbb;
+    --frost-2:#88c0d0;
+    --frost-3:#81a1c1;
+    --frost-4:#5e81ac;
 }
+
+html {
+    height: 100%;
+    background-color: var(--nord-3)
+}
+

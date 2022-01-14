@@ -1,13 +1,37 @@
 .title_bar {
-    padding : 15px;
+    z-index: 100;
+    padding-top : 32px;
+    padding-left: 120px;
+    padding-right: 120px;
+    padding-bottom: 24px;
     background-color: var(--nord-1);
+    position:fixed;
+    width: 102vw;
+    box-shadow: 0 4px 40px RGBA(0, 0, 0, 0.3);
 }
 
-.title_bar p {
+.title_bar p{
+    padding-left: 32px;
     color: var(--polar-2);
-    margin-right: 10px;
+    font-weight: bolder;
+    font-size: 20px;
+    
 }
 
 .title_title {
+    font-size: 20px;
+    padding-left: 32px;
+    font-weight: bolder;
     color: var(--polar-1);
+}
+
+.title_bar_link > a,
+.title_bar_link > a:hover,
+.title_bar_link > a:visited,
+.title_bar_link > a:active {
+    text-decoration: none;
+    color: var(--polar-2);
+    font-weight: bolder;
+    padding-left: 24px;
+    font-size: 20px;
 }
