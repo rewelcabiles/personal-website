@@ -10,30 +10,37 @@
 
 .top_main_text {
     color: var(--polar-3);
+    text-align: justify;
     font-size: 28px;
+    
 }
 
 .top_header {
     padding-top: 190px;
-    padding-bottom: 100px;
+    padding-left: 13%;
+    padding-right: 18%;
+    
     background-color: var(--nord-2);
     box-shadow: 0 4px 40px RGBA(0, 0, 0, 0.3);
 }
 
+.border_Left {
+    border-left: 4px solid var(--frost-1);
+    padding-left: 42px;
+}
+
 .top_header img{
     border-radius: 30%;
-    margin-left: 340px;
-    object-fit: cover;
-    width:300px;
-    height:300px;
+    object-fit: contain;
+    height:70%;
     box-shadow: 0 6px 6px RGBA(0, 0, 0, 0.7);
 }
 .slidein {
     left:2400px;
     position: relative;
     -webkit-animation-name: animation1; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 1.4s; /* Safari 4.0 - 8.0 */
-    -webkit-animation-delay: 0.2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 0s; /* Safari 4.0 - 8.0 */
     -webkit-animation-fill-mode: forwards;
     animation-name: slidein;
     animation-duration: 2s;
@@ -46,10 +53,9 @@
 .slidein_body {
     left:2400px;
     position: relative;
-    padding-right: 240px;
     -webkit-animation-name: animation1; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 1.4s; /* Safari 4.0 - 8.0 */
-    -webkit-animation-delay: 0.8s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: 0.3s; /* Safari 4.0 - 8.0 */
     -webkit-animation-fill-mode: forwards;
     animation-name: slidein_body;
     animation-duration: 2s;
@@ -62,8 +68,8 @@
 .transition {
     background-color: var(--nord-4);
     padding: 45PX;
-    padding-left: 320px;
-    padding-right: 320px;
+    padding-left: 17%;
+    padding-right: 17%;
     padding-bottom: 5px !important; 
 }
 
@@ -77,15 +83,14 @@
 .transition hr {
     background-color: var(--frost-1);
     height: 1px;
-    
     border-radius: 50px;
 }
 
 .projects_showcase {
     left: 0px;
     padding: 45px;
-    padding-left: 320px;
-    padding-right: 320px;
+    padding-left: 17%;
+    padding-right: 17%;
     background-color: var(--nord-4);
 }
 
@@ -121,4 +126,20 @@
     object-fit: cover;
     border-radius: 2%;
     width: 100%;
+}
+
+.slide_up {
+    background-color: var(--nord-4);
+    top:2400px;
+    position: relative;
+    -webkit-animation-name: animation1; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 1.2s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-delay: .6s; /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards;
+    animation-name: slide_up;
+    animation-duration: 1.2s;
+}
+
+@keyframes slide_up {
+    100% {top:0px;}
 }

@@ -14,6 +14,10 @@
 
 html {
     height: 100%;
-    background-color: var(--nord-3)
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--nord-4);
 }
 

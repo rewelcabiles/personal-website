@@ -5,16 +5,16 @@
 
 {% endblock %}
 {% block content %}
-<div class="row ">
+<div class="row">
 	<div class="col top_header container-fluid">
-		<div class="row container-fluid">
-			<div class="col-5">
-				<img class="slidein" src="{{ url_for('static', filename='img/common/me.JPG')}}" alt="">
+		<div class="row ">
+			<div class="col-md-5 d-flex ">
+				<img class="slidein mx-auto" src="{{ url_for('static', filename='img/common/me.JPG')}}" alt="">
 			</div>
-			<div class="col">
-				<div class="slidein_body">
+			<div class="col-md">
+				<div class="slidein_body border_Left mt-md-4">
 					<p class="top_text">
-						Hey There! I'm <b> Rewel Cabiles </b>!
+						Hey There! I'm <b> Rewel Cabiles </b>
 					</p>
 					<p class="top_main_text"> 
 						I am a graduating Computer Science student thats had a passion for all things programming and computers since I was young.
@@ -27,37 +27,39 @@
 		</div>
 	</div>
 </div>
-<div class="row mx-auto transition">
-	<div class="container-fluid">
-		<h3> <b>PROJECTS</b> </h3>
+<div class="row mx-auto transition ">
+	<div class="container-fluid slide_up" id="projects">
+		<h3 class="slide_up"> <b>PROJECTS</b> </h3>
 		<hr>
-	</div>
-</div>
-<div class="row mx-auto projects_showcase">
-	<div class="col-4">
-		<video class="vidya img-fluid" autoplay muted loop>
-			<source src="{{ url_for('static', filename='img/projects/neon-fire/preview.webm') }}" type="video/mp4">
-			Your browser does not support the video tag.
-		</video> </div>
-	<div class="col container project_details">
-		<div class="project_detail_titles d-flex justify-content-between">
-			<h2>Neon Fire</h2>
-			<div></div>
-			<a target="_blank" href="https://github.com/rewelcabiles/NeonFire">
-				<i class="bi bi-github"></i>
-				Git
-			</a>
-		</div>
-		
-		<hr>
-		<p>
-			Sunt cupidatat irure elit aute sint eu aliquip cillum excepteur excepteur commodo Lorem ipsum. Ad esse laboris mollit fugiat incididunt anim nisi in est amet. Minim irure elit exercitation labore irure aute. Tempor incididunt enim sit minim dolore elit esse sunt. In pariatur nulla nisi cillum proident cillum ullamco elit eiusmod Lorem. Ut elit consequat aute officia voluptate culpa. Commodo veniam esse sit cupidatat Lorem do.
-		</p>
 	</div>
 </div>
 
-	
+<div class="projects_showcase ">
+
+	<div class="row mx-auto slide_up">
+		<div class="col-md-4">
+			<video class="vidya img-fluid" autoplay muted loop>
+				<source src="{{ url_for('static', filename='img/projects/neon-fire/preview.webm') }}" type="video/mp4">
+				Your browser does not support the video tag.
+			</video> </div>
+		<div class="col container project_details">
+			<div class="project_detail_titles d-flex justify-content-between">
+				<h2>Neon Fire</h2>
+				<div></div>
+				<a target="_blank" href="https://github.com/rewelcabiles/NeonFire">
+					<i class="bi bi-github"></i>
+					Git
+				</a>
+			</div>
+			
+			<hr>
+			<p>
+				Sunt cupidatat irure elit aute sint eu aliquip cillum excepteur excepteur commodo Lorem ipsum. Ad esse laboris mollit fugiat incididunt anim nisi in est amet. Minim irure elit exercitation labore irure aute. Tempor incididunt enim sit minim dolore elit esse sunt. In pariatur nulla nisi cillum proident cillum ullamco elit eiusmod Lorem. Ut elit consequat aute officia voluptate culpa. Commodo veniam esse sit cupidatat Lorem do.
+			</p>
+		</div>
+	</div>
 </div>
+
 
 
 {% endblock %}
