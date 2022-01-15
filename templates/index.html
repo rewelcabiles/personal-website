@@ -5,14 +5,14 @@
 
 {% endblock %}
 {% block content %}
-<div class="row">
+<div class="row border_bottom">
 	<div class="col top_header container-fluid">
 		<div class="row ">
-			<div class="col-md-5 d-flex ">
+			<div class="col-lg-5 d-flex img_container">
 				<img class="slidein mx-auto" src="{{ url_for('static', filename='img/common/me.JPG')}}" alt="">
 			</div>
-			<div class="col-md">
-				<div class="slidein_body border_Left mt-md-4">
+			<div class="col-lg">
+				<div class="slidein_body mt-md-1">
 					<p class="top_text">
 						Hey There! I'm <b> Rewel Cabiles </b>
 					</p>
@@ -27,7 +27,7 @@
 		</div>
 	</div>
 </div>
-<div class="row mx-auto transition ">
+<div class="row mx-auto transition border_top">
 	<div class="container-fluid slide_up" id="projects">
 		<h3 class="slide_up"> <b>PROJECTS</b> </h3>
 		<hr>
@@ -35,10 +35,9 @@
 </div>
 
 <div class="projects_showcase ">
-
 	<div class="row mx-auto slide_up">
-		<div class="col-md-4">
-			<video class="vidya img-fluid" autoplay muted loop>
+		<div class="col-md-4 no-gutter mx-0 px-0">
+			<video class="vidya" autoplay muted loop>
 				<source src="{{ url_for('static', filename='img/projects/neon-fire/preview.webm') }}" type="video/mp4">
 				Your browser does not support the video tag.
 			</video> </div>

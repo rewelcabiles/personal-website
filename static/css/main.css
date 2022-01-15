@@ -10,6 +10,13 @@
     --frost-2:#88c0d0;
     --frost-3:#81a1c1;
     --frost-4:#5e81ac;
+
+    --nav-bar-bg: var(--nord-1);
+    --text-light: var(--polar-2);
+    --text-dark: var(--nord-2);
+
+    --highlight-1: var(--frost-3);
+    --highlight-2: var(--frost-1)
 }
 
 html {
@@ -18,6 +25,6 @@ html {
 }
 
 body {
-    background-color: var(--nord-4);
+    background-color: var(--nord-1);
 }
 

@@ -1,38 +1,39 @@
-.title_bar {
-    z-index: 100;
-    padding-top : 32px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 14px;
-
-    background-color: var(--nord-1);
-    position:fixed;
-    width: 102vw;
-    box-shadow: 0 4px 40px RGBA(0, 0, 0, 0.3);
+.navbar {
+    -top: 120px;
+    background-color: var(--nav-bar-bg);
+    box-shadow: 0 14px 20px RGBA(37, 51, 67, 0.68);
 }
 
-.title_bar p{
-    padding-left: 32px;
-    color: var(--polar-2);
-    font-weight: bolder;
-    font-size: 18px;
-
+.navbar-toggler i {
     
-}
-
-.title_title {
-    font-size: 20px;
-    padding-left: 32px;
-    font-weight: bolder;
     color: var(--polar-1);
 }
 
-.title_bar_link > a,
-.title_bar_link > a:hover,
-.title_bar_link > a:visited,
-.title_bar_link > a:active {
+.navbar-nav {
+    padding-right: 100px;
+}
+
+.nav-item a{
+    padding-left: 32px;
+    color: var(--text-light);
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+.navbar-brand,
+.navbar-brand:hover {
+    padding-left: 120px;
+    font-weight: bolder;
+    color: var(--text-light);
     text-decoration: none;
-    color: var(--polar-2);
+}
+
+.nav-item a,
+.nav-item a:hover,
+.nav-item a:visited,
+.nav-item a:active {
+    text-decoration: none;
+    color: var(--text-light);
     font-weight: bolder;
     padding-left: 24px;
     font-size: 18px;
