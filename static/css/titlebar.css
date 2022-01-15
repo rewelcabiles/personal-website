@@ -1,7 +1,7 @@
 .navbar {
-    -top: 120px;
+    padding: 25px !important;
     background-color: var(--nav-bar-bg);
-    box-shadow: 0 14px 20px RGBA(37, 51, 67, 0.68);
+    box-shadow: 0 8px 20px RGBA(37, 51, 67, 0.68);
 }
 
 .navbar-toggler i {
@@ -16,14 +16,13 @@
 .nav-item a{
     padding-left: 32px;
     color: var(--text-light);
-    font-weight: bolder;
     font-size: 24px;
 }
 
 .navbar-brand,
 .navbar-brand:hover {
     padding-left: 120px;
-    font-weight: bolder;
+    font-weight: bold;
     color: var(--text-light);
     text-decoration: none;
 }
@@ -34,7 +33,7 @@
 .nav-item a:active {
     text-decoration: none;
     color: var(--text-light);
-    font-weight: bolder;
+    
     padding-left: 24px;
     font-size: 18px;
 }

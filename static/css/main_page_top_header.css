@@ -1,34 +1,45 @@
+.decorative_main_text {
+    color: gray;
+}
 .top_text{
     color: var(--text-light);
-    font-size: 24px;
+    font-size: 20px;
 }
 
 .top_text b {
     color: var(--highlight-1);
-    font-size: 32px;
+    font-size: 28px;
 }
 
 .top_main_text {
     color: var(--text-light);
     text-align: justify;
-    font-size: 28px;
+    font-size: 24px;
     
 }
 
 .top_header {
-    padding-top: 150px;
+    padding-top: 190px;
     padding-bottom: 80px;
     padding-left: 13%;
     padding-right: 18%;
-    background-color: var(--nord-2);
-    box-shadow: 0 14px 20px RGBA(37, 51, 67, 0.68);
+    background-image: linear-gradient(120deg, var(--nord-1), var(--nord-4));
+    /* background-color: var(--nord-2); */
+    /*box-shadow: 0 4px 40px RGBA(37, 51, 67, 0.5);*/
+}
+
+.transition_border {
+    height: 90px;
+    background-image: linear-gradient(0deg, var(--polar-1), var(--nord-2));
+
 }
 
 .border_bottom {
-    
+    border-bottom: 8px solid var(--highlight-1);
 }
 
 .border_top {
+     border-top: 8px solid var(--highlight-2);
     
 }
 
@@ -36,7 +47,7 @@
     border-radius: 30%;
     object-fit: fill;
     width:60%;
-    box-shadow: 0 6px 6px RGBA(0, 0, 0, 0.7);
+    box-shadow: 0 0px 24px RGBA(0, 0, 0, 0.6);
     margin-bottom: 10%;
 }
 .slidein {
@@ -101,6 +112,7 @@
 
 .project_details{
     background-color: var(--nord-4);
+    background-image: linear-gradient(90deg, var(--nord-1), var(--nord-4));
     padding: 20px;
     padding-bottom: 0px !important;
     border-top-right-radius: 20px;
@@ -197,4 +209,15 @@
 
 @keyframes slide_up {
     100% {top:0px;}
+}
+
+
+.blink {
+    animation: blinker 1s linear infinite;
+    color: gray;
+}
+@keyframes blinker {
+    50% {
+        opacity: 0;
+}
 }

@@ -28,3 +28,6 @@ body {
     background-color: var(--nord-1);
 }
 
+* {
+    font-family:  arvo, serif;
+  }
