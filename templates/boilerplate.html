@@ -4,7 +4,7 @@
     <title>Rewel Cabiles</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/titlebar.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/boilerplate.css') }}">
     <link rel="stylesheet" href="https://use.typekit.net/gmr0nbi.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
@@ -28,6 +28,9 @@
           <li class="nav-item">
             <a  class="nav-link" target="_blank" href="https://www.github.com/rewelcabiles">GITHUB</a>
           </li>    
+          <li class="nav-item">
+            <a  class="nav-link ml-5" href="#me"><i class="bi bi-arrow-up-square"></i></a>
+          </li>
         </ul>
       </div>  
     </nav>
@@ -35,6 +38,17 @@
 
     {% block content %}{% endblock %}
 
+
+    <div class="footer-basic">
+      <footer>
+          <div class="social">
+            <a target="_blank" href="https://www.github.com/rewelcabiles"><i class="bi bi-github"></i></a>
+            <a target="_blank" href="https://www.instagram.com/rewelcabiles/"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-file-earmark-person"></i></a>
+          </div>
+          
+      </footer>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
