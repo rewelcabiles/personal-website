@@ -62,12 +62,10 @@
 			</div>
 			<p>
 				Neon fire is a bullet-hell rogue-like game made with the Godot Engine. This project was made for my game development class.
-				A lot of game I enjoy are rogue-like games, so I decided to make one myself. 
-				
-				<br><br>Some of the interesting characteristics
-				that these games have from a technical standpoint, is the random/procedural generation of the levels, as well as the different playstyles
-				that players can take up depending on unique items they find in each playthrough. I sought to implement those core concepts
-				into Neon Fire as much as I could as well.
+				A lot of game I enjoy are rogue-like games, so I decided to make one myself using an engine I was familiar with.
+				<br><br> While this game isn't fully fleshed out the way I envisioned it (due to scope creep, which I've now learned not to do).
+				 A lot of the important systems are already in place, and all thats needed is content. Systems including Random level generation with a zelda-like lock and key progression system to get through the floor.
+				 Unique item rooms and key rooms are guarded by waves of enemies which drop consumables when killed. All culminating into a final boss battle, that you see in the preview video.
 		</div>
 	</div>
 	<div class="row mx-auto slide_up project">
@@ -94,7 +92,37 @@
 			</div>
 			<p>
 				This is the website you're currently on! Its a place for me to show of my projects and for others to know what I do!<br>
-				<br>This website is made using Python Flask, and is hosted on Heroku!
+				<br>The server is made using Python Flask, and is hosted on Heroku. The website itself is made using the standard HTML/CSS/JS as well as Flasks default web template engine Jinja.
+			</p>
+		</div>
+	</div>
+
+	<div class="row mx-auto slide_up project">
+		<div class="col-md-4 no-gutter mx-0 px-0 ">
+			<video class="vidya" autoplay muted loop>
+				<source src="{{ url_for('static', filename='img/projects/insert-title-here/preview.webm') }}" type="video/mp4">
+			</video>
+		</div>
+		<div class="col container project_details">
+			<div class="project_detail_titles d-flex justify-content-between">
+				<h2>Insert-Title-Here</h2>
+				<div>
+
+				</div>
+				<a target="_blank" href="https://gitlab.com/RewelCabiles/insert-name-here">
+					<i class="bi bi-git"></i>
+					Git
+				</a>
+			</div>
+			<hr>
+			<div class="d-flex">
+				<span class="genre badge">Game Development</span>
+			</div>
+			<p>
+				This was an untitled (hence the name) personal game I was developing using Godot, and one of the first games I've tried making using this engine. Its a Roge-like RPG with different classes.
+				Although by them time I stopped working on it there wasnt much in terms of visual content, I did end up making a lot of the systems
+				required by the game, like character picking, equipment handling, UI, room generation, animation, attacks / health, etc.
+				
 			</p>
 		</div>
 	</div>
@@ -121,8 +149,40 @@
 				<span class="genre badge">Artificial Intelligence</span>
 			</div>
 			<p>
-				This is a school project for my AI class inw hich the AI plays games using the Minmax algorithm.
+				This is a school project for my AI class in which the AI plays games using the Minmax algorithm.
 				The game logic and AI was written in Python!
+			</p>
+		</div>
+	</div>
+
+	<div class="row mx-auto slide_up project">
+		<div class="col-md-4 no-gutter mx-0 px-0 ">
+			<video class="vidya" autoplay muted loop>
+				<source src="{{ url_for('static', filename='img/projects/yapama/preview.mp4') }}" type="video/mp4">
+			</video>
+		</div>
+		<div class="col container project_details">
+			<div class="project_detail_titles d-flex justify-content-between">
+				<h2>Yapama (Yet Another Password Manager)</h2>
+				<div>
+
+				</div>
+				<a target="_blank" href="https://github.com/rewelcabiles/Yapama">
+					<i class="bi bi-github"></i>
+					Git
+				</a>
+			</div>
+			<hr>
+			<div class="d-flex">
+				<span class="genre badge">Mobile Development</span>
+			</div>
+			<p>
+				This is a school project for my Mobile Development class where we were tasked to make any sort of Mobile App.
+				I decided to make a password manager that would give the user more options in storing their password databases.
+				<br><br>
+				Rather than storing your passwords on app creators servers like most password managers do. Yapama would allow the users
+				to store their passwords using Drive, Git, or FTP servers, give the users peace of mind when it comes to the security
+				of their passwords.
 			</p>
 		</div>
 	</div>
