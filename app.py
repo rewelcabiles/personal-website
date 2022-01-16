@@ -3,10 +3,9 @@ from pymongo import MongoClient
 import pymongo
 import os
 
-user_pass = os.environ.get("mongo_user") + ":" + os.environ.get("mongo_pass")
-db_name = os.environ.get("mongo_db_name")
-client = MongoClient("mongodb+srv://"+user_pass+"@prototype-cluster-0.jpk9n.mongodb.net/"+db_name+"?retryWrites=true&w=majority")
-db = client[db_name]
+db_uri = os.environ.get("db_uri")
+client = MongoClient(db_uri)
+db = client[os.environ.get("mongo_db_name")]
 
 
 app = Flask(__name__)
