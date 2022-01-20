@@ -12,8 +12,8 @@ app = Flask(__name__)
 
 @app.route("/")
 def index():
-    featured_projects = db["projects"].find({"is_featured":True})
-    other_projects = db["projects"].find({"is_featured":False})
+    featured_projects = db["projects"].find({"is_featured":True}).sort("position")
+    other_projects = db["projects"].find({"is_featured":False}).sort("position")
     return render_template(
         "index.html",
         featured_projects=featured_projects,
