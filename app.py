@@ -19,3 +19,8 @@ def index():
         featured_projects=featured_projects,
         other_projects=other_projects)
 
+
+
+
+if __name__ == "__main__":
+    app.run(debug=True)
